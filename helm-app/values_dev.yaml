@@ -1,2 +1,3 @@
 nameSpace: dev
 image: alkarakully/tssdata-django:v10.0
+replicas: 6
