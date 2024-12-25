@@ -1,2 +1,3 @@
 nameSpace: prod
 image: alkarakully/tssdata-django-prod:v10.0
+replicas: 6
