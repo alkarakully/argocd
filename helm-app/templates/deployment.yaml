@@ -19,6 +19,3 @@ spec:
         image: alkarakully/tssdata-django:v5.0
         ports:
         - containerPort: 8000
-        envFrom:
-        - configMapRef:
-            name: {{ .Values.configmap.name }}
