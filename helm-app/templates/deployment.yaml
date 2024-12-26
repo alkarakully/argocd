@@ -19,6 +19,7 @@ spec:
         image: {{ .Values.image }}
         volumeMounts:
          - name: custom_header
+           mountPath: /opt
         ports:
         - containerPort: 8000
       volumes:
