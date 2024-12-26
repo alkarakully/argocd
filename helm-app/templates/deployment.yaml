@@ -24,5 +24,5 @@ spec:
         - containerPort: 8000
       volumes:
         - name: config-vol
-      configMap:
-        name: {{ .Values.configmap.name }}
+        configMap:
+          name: {{ .Values.configmap.name }}
