@@ -1,4 +1,3 @@
 configmap:
-  name: myhelmapp-configmap-v1
-  data:
-    CUSTOM_HEADER: 'This app was deployed with helm!'
+  name: tssdata-app
+
