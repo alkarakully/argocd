@@ -17,10 +17,10 @@ spec:
       containers:
       - name: tssdata-web01
         image: {{ .Values.image }}
+        volumeMounts:
+         - name: custom_header
         ports:
         - containerPort: 8000
-        volumeMounts:
-          - name: custom_header
       volumes:
         - name: custom_header
           configMap:
