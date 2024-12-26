@@ -18,11 +18,11 @@ spec:
       - name: tssdata-web01
         image: {{ .Values.image }}
         volumeMounts:
-         - name: custom_header
-           mountPath: /opt
+        - name: config-vol
+          mountPath: /opt
         ports:
         - containerPort: 8000
       volumes:
-        - name: custom_header
-          configMap:
-            name: {{ .Values.configmap.name }}
+        - name: config-vol
+      configMap:
+        name: {{ .Values.configmap.name }}
