@@ -20,5 +20,5 @@ spec:
         ports:
         - containerPort: 8000
         envFrom:
-        - configMapRef:
+        - configMapKeyRef:
             name: {{ .Values.configmap.name }}
