@@ -7,7 +7,6 @@ metadata:
     app: tssdata01
 spec:
   type: LoadBalancer
-  loadBalancerIP: 10.10.10.100
   selector:
     app: tssdata01
   ports:
