@@ -17,12 +17,8 @@ spec:
       containers:
       - name: tssdata-web01
         image: {{ .Values.image }}
-        volumeMounts:
-          - name: config-vol
-            mountPath: /opt
         ports:
         - containerPort: 8000
-      volumes:
-        - name: config-vol
-          configMap:
+        envFrom:
+        - configMapRef:
             name: {{ .Values.configmap.data.name }}
