@@ -1,3 +1,7 @@
 nameSpace: dev
-image: alkarakully/tssdata-django:v10.0
+image: alkarakully/tssdata-django:v11.0
 replicas: 8
+configmap:
+  data:
+    name: tssdata-app
+    header: 'This is on the DEV environment!'

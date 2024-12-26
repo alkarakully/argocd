@@ -1,3 +1,7 @@
 nameSpace: prod
-image: alkarakully/tssdata-django-prod:v10.0
+image: alkarakully/tssdata-django-prod:v11.0
 replicas: 6
+configmap:
+  data:
+    name: tssdata-app
+    header: 'This is on the PROD environment!'
