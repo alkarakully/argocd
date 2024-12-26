@@ -25,4 +25,4 @@ spec:
       volumes:
         - name: config-vol
         configMap:
-          name: {{ .Values.configmap.name }}
+          name: {{ .Values.configmap.data.name }}
