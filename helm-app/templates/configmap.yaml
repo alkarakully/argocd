@@ -4,5 +4,4 @@ metadata:
   name: {{ .Values.configmap.data.name }}
   
 data:
-  #custom_header: {{ .Values.configmap.data.header }}
-  custom_header: "بسم الله ما شاء الله"
+  custom_header: {{ .Values.configmap.data.header }}

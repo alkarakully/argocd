@@ -19,6 +19,9 @@ spec:
         image: {{ .Values.image }}
         ports:
         - containerPort: 8000
-        envFrom:
-        - configMapRef:
+        volumeMounts:
+          - name: custom_header
+      volumes:
+        - name: custom_header
+          configMap:
             name: {{ .Values.configmap.name }}
