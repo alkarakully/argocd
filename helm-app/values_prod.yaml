@@ -4,4 +4,4 @@ replicas: 6
 configmap:
   data:
     name: tssdata-app
-    header: 'بِسْمِ اللهِ الرَّحْمنِ الرَّحِيمِ'
+    header: 'This is on the PROD environment!'
