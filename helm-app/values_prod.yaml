@@ -4,4 +4,4 @@ replicas: 6
 configmap:
   data:
     name: tssdata-app
-    header: 'This is on the SORAA environment!'
+    header: 'بِسْمِ اللهِ الرَّحْمنِ الرَّحِيمِ'
