@@ -1,5 +1,5 @@
 nameSpace: dev
-image: alkarakully/tssdata-django:v11.0
+image: alkarakully/tssdata-django:v12.0
 replicas: 6
 configmap:
   data:
