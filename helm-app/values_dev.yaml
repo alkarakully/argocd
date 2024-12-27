@@ -4,4 +4,4 @@ replicas: 6
 configmap:
   data:
     name: tssdata-app
-    header: 'This is on the DEV environment!'
+    header: 'This is on the PROD-DEV environment!'
