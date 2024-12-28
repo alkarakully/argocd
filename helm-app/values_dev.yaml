@@ -4,4 +4,4 @@ replicas: 6
 configmap:
   data:
     name: tssdata-app
-    header: 'I am welcoming SHahid to my lab!'
+    header: 'This is on the DEVELOPEMENT environment!'
